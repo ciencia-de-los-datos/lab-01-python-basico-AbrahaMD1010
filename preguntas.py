@@ -254,11 +254,11 @@ def pregunta_07():
 
     dic = {}
     for fila in relacion:
-        if fila[1] not in dic.keys():
-            dic[fila[1]] = []
-            dic[fila[1]].append(fila[0])
+        if int(fila[1]) not in dic.keys():
+            dic[int(fila[1])] = []
+            dic[int(fila[1])].append(fila[0])
         else:
-            dic[fila[1]].append(fila[0])
+            dic[int(fila[1])].append(fila[0])
 
     tuplas = list(dic.items())
     tuplas.sort(key=lambda x:x[0])
