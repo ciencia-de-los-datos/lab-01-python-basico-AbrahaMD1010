@@ -289,7 +289,6 @@ print(pregunta_07())
     ]
 
     """
-
 def pregunta_08():
     with open("data.csv", "r") as file:
         relacion = file.readlines()
